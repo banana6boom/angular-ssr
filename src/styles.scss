@@ -1,0 +1,304 @@
+.roboto-thin {
+  font-family: Roboto, system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: Roboto, system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: Roboto, system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: Roboto, system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: Roboto, system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: Roboto, system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: Roboto, system-ui;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: Roboto, system-ui;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: Roboto, system-ui;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: Roboto, system-ui;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: Roboto, system-ui;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: Roboto, system-ui;
+  font-weight: 900;
+  font-style: italic;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 1.25rem;
+  font-family: Roboto, system-ui;
+  background-image: linear-gradient(
+    45deg,
+    hsl(194deg 61% 57%) 0%,
+    hsl(197deg 64% 58%) 8%,
+    hsl(200deg 67% 60%) 17%,
+    hsl(204deg 68% 62%) 25%,
+    hsl(208deg 69% 64%) 33%,
+    hsl(213deg 68% 67%) 42%,
+    hsl(220deg 65% 69%) 50%,
+    hsl(228deg 60% 71%) 58%,
+    hsl(241deg 53% 73%) 67%,
+    hsl(255deg 49% 71%) 75%,
+    hsl(270deg 46% 68%) 83%,
+    hsl(285deg 41% 66%) 92%,
+    hsl(301deg 37% 63%) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 1.25rem 0;
+}
+
+.h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.h2 {
+  font-size: 2.75rem;
+}
+
+.h3 {
+  font-size: 2.5rem;
+}
+
+.h4 {
+  font-size: 2.25rem;
+}
+
+.h5 {
+  font-size: 2rem;
+}
+
+.h6 {
+  font-size: 1.75rem;
+}
+
+.hr {
+  border: 1px solid rgb(0 0 0);
+}
+
+.text {
+  font-size: 1.25rem;
+}
+
+.nav {
+  margin: 2rem 0;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: rgb(0 0 0);
+  text-decoration: none;
+}
+
+.list-item > .link {
+  cursor: pointer;
+
+  display: flex;
+  place-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 3.5rem;
+
+  font-weight: bold;
+
+  background-color: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(0.6rem);
+  border: 1px solid rgb(255 255 255 / 0.35);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 2rem rgb(0 0 0 / 0.1);
+
+  transition: background-color 0.3s ease-in;
+}
+
+.list-item > .link:not(.active):hover {
+  background-color: rgb(255 255 255);
+}
+
+.list-item > .link:not(.active):active {
+  background-color: rgb(255 255 255 / 0.6);
+}
+
+.list-item > .link.active {
+  background-color: rgb(255 255 255);
+  border: 1px solid rgb(0 0 0 / 0.75);
+}
+
+.buttons {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.buttons-2-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.buttons-3-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+  cursor: pointer;
+
+  width: fit-content;
+  height: 2.75rem;
+  padding: 0 1rem;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(59 130 246);
+
+  background-color: #f3f7fe;
+  border: none;
+  border-radius: 8px;
+
+  transition:
+    color 0.3s ease-in,
+    background-color 0.3s ease-in,
+    box-shadow 0.3s ease-in;
+}
+
+.button-full {
+  width: 100%;
+}
+
+.button:hover {
+  color: rgb(255 255 255);
+  background-color: rgb(59 130 246);
+  box-shadow: 0 0 0 5px rgb(59 131 246 / 0.373);
+}
+
+.button:active {
+  background-color: rgb(38 104 211);
+}
+
+.box {
+  padding: 1rem;
+  border: 1px solid rgb(255 255 255);
+  border-radius: 0.25rem;
+}
+
+.box + .box {
+  margin-top: 1rem;
+}
+
+.glass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 1rem 0;
+  padding: 1rem;
+
+  background: rgb(255 255 255 / 0.3);
+  backdrop-filter: blur(0.25rem);
+  border-radius: 0.625rem;
+  box-shadow: 0 0.5rem 2rem 0 rgb(31 38 135 / 0.35);
+}
+
+.glass-zero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 1rem 0;
+  padding: 1rem;
+
+  background: rgb(255 255 255 / 0.1);
+  backdrop-filter: blur(0.5rem);
+  border-radius: 1rem;
+  box-shadow: 0 0.25rem 2rem rgb(0 0 0 / 0.1);
+}
+
+.glass-border-white {
+  border: 1px solid rgb(255 255 255);
+}
+
+.glass-border-white-3 {
+  border: 1px solid rgb(255 255 255 / 0.3);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
